@@ -1,25 +1,13 @@
 {
 "manifest_version": 2,
-    
 "name": "noTrends",
-   
- "description": "Removes the 'Trending'-Button from Youtube.com",
-    
+"description": "Removes the 'Trending'-Button from Youtube.com",
 "version": "1.0",
-    
 "content_scripts": [
-        {
-            
-"matches": [
-                "*://*/*"
-            ],
-            
-"js": [
-                
-"content.js"
-            ],
-            
-"run_at": "document_end"
-        }
-    ]
+{
+"matches": [ "*://*/*"],
+"js": ["content.js"],
+
+"run_at": "document_start"
+}]
 }
